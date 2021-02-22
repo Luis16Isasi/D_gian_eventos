@@ -1,0 +1,164 @@
+#componentNosotros{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#fondoNosotros{
+    width: 100%;
+    min-height: 400px;
+    margin: 0px;
+    max-height: 950px;
+    background-image: url('../../imagenes/fondoNosotros.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEXTO DE FONDO NOSOTROS */
+#fondoNosotros div{
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    text-align: center;
+    width: 75%;
+    max-width: 900px;
+    min-width: 200px;
+}
+#fondoNosotros div h2{
+    font-size: 50px;
+}
+#fondoNosotros div p{
+    font-size: 35px;
+    color: red;
+    font-weight: 700;
+}
+
+
+#contentNosotros{
+    font-family: 'Assistant', sans-serif;
+    max-width: 1000px;
+}
+#contentNosotros * {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: baseline;
+}
+#contentNosotros div{
+    margin: 30px 0px;
+}
+
+#contentNosotros div h3{
+    width: 35%;
+}
+#contentNosotros div p{
+    width: 64%;
+    font-size: 20px;
+    line-height: 30px;
+}
+#frase{
+    justify-content: center;
+    align-items: center;
+}
+#contentNosotros #miTrabajo{
+    flex-direction: column;
+}
+#contentNosotros #miTrabajo div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contentNosotros #miTrabajo #linkMiTrabajo{
+    background-color: white;
+    padding: 13px;
+    color: tomato;
+    border: 2px solid tomato;
+    text-decoration: none;
+    font-weight: 700;
+}
+#contentNosotros #miTrabajo #linkMiTrabajo:hover{
+    color: white;
+    background-color: tomato; 
+}
+
+@media ( min-width: 0px) and ( max-width: 499px){
+   
+    /* LETRA DEL FONDO */
+    #fondoNosotros div{
+        width: 97%;
+        max-width: 350px;
+    }
+    #fondoNosotros div h2{
+        font-size: 45px;
+    }
+    #fondoNosotros div p{
+        font-size: 27px;
+    }
+
+
+    #contentNosotros{
+        width: 90%;
+    }
+    #contentNosotros *{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+    #contentNosotros div h3{
+        font-size: 27px;
+        width: 100%;
+    }
+    #contentNosotros div p{
+        text-align: center;
+        width: 80%;
+    }
+    #contentNosotros #frase img{
+        width: 130%;
+        height: 130%;
+    }
+}
+
+
+@media ( min-width: 500px) and ( max-width: 767px){
+    #contentNosotros{
+        width: 83%;
+    }
+    #contentNosotros *{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #contentNosotros div h3{
+        width: 80%;
+    }
+    #contentNosotros div p{
+        text-align: center;
+        width: 80%;
+    }
+    #contentNosotros #frase img{
+        width: 120%;
+        height: 120%;
+    }
+}
+
+@media ( min-width: 768px) and ( max-width: 990px){
+    #contentNosotros{
+        width: 83%;
+    }
+    #contentNosotros div h3{
+        font-size: 27px;
+        min-width: 270px;
+    }
+    #contentNosotros div p{
+        min-width: 50%;
+    }
+
+}
+@media (min-width: 991px){
+    #contentNosotros div h3{
+        font-size: 27px;
+    }
+}

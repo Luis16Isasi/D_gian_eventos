@@ -1,0 +1,435 @@
+#expe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#expe *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Assistant', sans-serif;
+}
+#expe #letraExpe h1{
+    font-size: 33px;
+    color: tomato;
+    padding: 17px 0px 0px 0px;
+    letter-spacing: 8px;
+}
+#expe #letraExpe p{
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/* stylos para la seccion de fotografias*/
+
+#expe #contentExpe{
+    height: auto;
+    display: flex;
+}
+/* VER-HORI*/
+
+#expe #contentExpe .column #ver_hori{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+}
+#expe #contentExpe .column #ver_hori div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+#expe #contentExpe .column #ver_hori div figure{
+    width: 48%;
+    height: 350px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#expe #contentExpe .column #ver_hori figure{
+    width: 100%;
+    height: 250px;
+    margin: 10px 0px;   
+    border-radius: 5px;
+    overflow: hidden;
+}
+#expe #contentExpe .column #ver_hori figure img{
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+}
+#expe #contentExpe .column #ver_hori figure:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 350ms ease-in-out;
+    -webkit-transition: all 350ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out; 
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out; 
+    transform: scale(1.05);
+    -ms-transform:scale(1.05); 
+    -moz-transform:scale(1.05); 
+    -webkit-transform:scale(1.05); 
+    -o-transform:scale(1.05); 
+}
+
+
+/* HORI-VER*/
+
+#expe #contentExpe .column #hori_ver{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+}
+#expe #contentExpe .column #hori_ver figure{
+    height: 250px;
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#expe #contentExpe .column #hori_ver figure img{
+    width: 100%;
+    height: 100%;
+}
+#expe #contentExpe .column #hori_ver div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+#expe #contentExpe .column #hori_ver div figure{
+    margin: 10px 0px;
+    height: 350px;
+    width: 48%;
+}
+#expe #contentExpe .column #hori_ver div figure img{
+    width: 100%;
+    height: 100%;
+}
+#expe #contentExpe .column #hori_ver figure:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 350ms ease-in-out;
+    -webkit-transition: all 350ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out; 
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out; 
+    transform: scale(1.05);
+    -ms-transform:scale(1.05); 
+    -moz-transform:scale(1.05); 
+    -webkit-transform:scale(1.05); 
+    -o-transform:scale(1.05);  
+}
+
+/* GALERIA DE IMG*/
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 140; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    color: #ccc;
+    padding: 10px 0px 0px 0px;
+    height: 150px;  
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+@media ( min-width: 0px) and ( max-width: 319px){
+
+    #expe #letraExpe h1{
+       width: 100%;
+       font-size: 30px;
+       color: tomato;
+       padding: 17px 0px 0px 0px;
+       letter-spacing: 4px; 
+    }
+    #expe #letraExpe p{
+        width: 90%;
+    }
+    
+        /* CONTENT EXPERIENCIA*/ 
+    #expe #contentExpe{
+        min-width: 90%;
+        width: 97%;
+        max-width: 950px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #expe #contentExpe div:nth-child(1){
+        width: 100%;
+    }
+    #expe #contentExpe div:nth-child(2){
+        width: 100%;
+    }
+
+
+    /*VER_HORI*/
+    #expe #contentExpe .column #ver_hori div figure{
+        height: 290px;
+        width: 49%;
+    }
+    #expe #contentExpe .column #ver_hori figure{
+        height: 255px;
+    }
+    
+    /* HORI_VER */
+    #expe #contentExpe .column #hori_ver figure{
+        height: 255px;
+    }
+    #expe #contentExpe .column #hori_ver div figure{
+        height: 290px;
+        width: 49%;
+    }
+    
+    
+
+}
+
+@media ( min-width: 320px) and ( max-width: 599px){
+    #expe #letraExpe h1{
+       width: 100%;
+        font-size: 33px;
+        color: tomato;
+        padding: 17px 0px 0px 0px;
+        letter-spacing: 8px;    
+    }
+    #expe #letraExpe p{
+        width: 90%;
+    }
+    
+        /* CONTENT EXPERIENCIA*/ 
+    #expe #contentExpe{
+        min-width: 90%;
+        width: 97%;
+        max-width: 950px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #expe #contentExpe div:nth-child(1){
+        width: 100%;
+    }
+    #expe #contentExpe div:nth-child(2){
+        width: 100%;
+    }
+        
+    /*VER_HORI*/
+    #expe #contentExpe .column #ver_hori div figure{
+        height: 320px;
+        width: 49%;
+    }
+    #expe #contentExpe .column #ver_hori figure{
+        height: 300px;
+    }
+    
+    /* HORI_VER */
+    #expe #contentExpe .column #hori_ver figure{
+        height: 300px;
+    }
+    #expe #contentExpe .column #hori_ver div figure{
+        height: 320px;
+        width: 49%;
+    }
+    
+}
+
+@media ( min-width: 500px) and ( max-width: 767px){
+
+    #expe #letraExpe h1{
+        width: 90%;
+    }
+    #expe #letraExpe p{
+         width: 85%;
+    }
+
+    /* CONTENT EXPERIENCIA*/ 
+    #expe #contentExpe{
+        min-width: 500px;
+        width: 100%;
+        max-width: 950px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #expe #contentExpe div:nth-child(1){
+        width: 95%;
+    }
+    #expe #contentExpe div:nth-child(2){
+        width: 95%;
+    }
+
+    /*VER_HORI*/
+    #expe #contentExpe .column #ver_hori div figure{
+        height: 380px;
+    }
+    #expe #contentExpe .column #ver_hori figure{
+        height: 350px;
+    }
+    
+    /* HORI_VER */
+    #expe #contentExpe .column #hori_ver figure{
+        height: 350px;
+    }
+    #expe #contentExpe .column #hori_ver div figure{
+        height: 380px;
+    }
+}
+
+@media ( min-width: 768px) and ( max-width: 990px){
+    #expe #letraExpe h1{
+        width: 90%;
+    }
+    #expe #letraExpe p{
+        width: 80%;
+    }
+ 
+    /* CONTENT EXPERIENCIA*/ 
+    #expe #contentExpe{
+        min-width: 750px;
+        width: 95%;
+        max-width: 950px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #expe #contentExpe div:nth-child(1){
+        width: 85%;
+    }
+    #expe #contentExpe div:nth-child(2){
+        width: 85%;
+    }
+
+    /*VER_HORI*/
+    #expe #contentExpe .column #ver_hori div figure{
+        height: 450px;
+    }
+    #expe #contentExpe .column #ver_hori figure{
+        height: 400px;
+    }
+    
+    /* HORI_VER */
+    #expe #contentExpe .column #hori_ver figure{
+        height: 400px;
+    }
+    #expe #contentExpe .column #hori_ver div figure{
+        height: 450px;
+    }
+}
+
+@media (min-width: 991px){
+
+    #expe #letraExpe{
+        width: 1000px;
+    }
+    #expe #letraExpe p{
+        width: 80%;
+    }
+    /* CONTENT EXPERIENCIA*/ 
+    #expe #contentExpe{
+        min-width: 1000px;
+        width: 95%;
+        max-width: 1400px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    #expe #contentExpe div:nth-child(1){
+        width: 48%;
+    }
+    #expe #contentExpe div:nth-child(2){
+        width: 48%;
+    }
+
+
+    /* HORI_VER */
+    #expe #contentExpe .column #ver_hori div figure{
+        height: 450px;
+    }
+    #expe #contentExpe .column #ver_hori figure{
+        height: 350px;
+    }
+
+    /*VER_HORI*/
+    #expe #contentExpe .column #hori_ver figure{
+        height: 350px;
+    }
+    #expe #contentExpe .column #hori_ver div figure{
+        height: 450px;
+    }
+}

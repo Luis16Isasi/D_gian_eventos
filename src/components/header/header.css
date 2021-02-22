@@ -1,0 +1,384 @@
+header{
+    width: 100%;
+    background: black;
+    margin: 0px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+header #content-logo{
+    display: flex;
+    justify-content: flex-start;
+    min-width: 300px;
+    margin-left: 30px;
+}
+header #content-logo #logo{
+    margin: 0px;
+    margin-right: 10px;
+    width: 75px;
+    height: 75px;
+}
+header #content-logo #logo img {
+    height: 100%;
+    width: 100%;
+}
+header #content-logo div{
+    text-align: center;
+    margin-left: -13px;
+    margin-top: -8px;
+    min-width: 200px;
+    font-family: 'Raleway', sans-serif;
+}
+header #content-logo div h1{ 
+    font-size: 27px;
+}
+header #content-logo div * {
+    color: white;
+}
+header nav #iconNav{
+    color: white;
+}
+header nav figure:hover{
+    cursor: pointer;
+}
+nav #contentSections #btnNav button:hover{
+    color: lightgray;
+}
+ul li .link{
+    color: white;
+    text-decoration: none;  
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+ul li .link:hover{
+    color: tomato
+}
+@keyframes desaparecerNav{
+    0%{ right: 0%;}
+    100%{ right: -100%;}
+}
+@-webkit-keyframes desaparecerNav{
+    0%{ right: 0%;}
+    100%{ right: -100%;}
+}
+@-moz-keyframes desaparecerNav{
+    0%{ right: 0%;}
+    100%{ right: -100%;}
+}
+@-o-keyframes desaparecerNav{
+    0%{ right: 0%;}
+    100%{ right: -100%;}
+}
+
+@keyframes aparecerNav{
+    0%{ right: -100%;}
+    100%{ right: 0%;}
+}
+
+.seleccionado{
+    color: tomato;
+}
+
+
+@media ( min-width: 0px) and ( max-width: 319px){
+    header{
+        height: 100px;
+    }
+    header #content-logo{
+        min-width: 200px;
+        margin-left: 10px;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    header #content-logo #logo{
+        width: 50px;
+        height: 50px;
+        min-height: 50px;
+        min-width: 50px;
+    }
+    header #content-logo div{
+        height: 60px;
+        margin: 0px;
+    }
+    header #content-logo div h1{
+        font-size: 22px;
+        margin: 10px 0px;
+    }
+    header #content-logo div h6{
+        display: none;
+    }
+
+    header nav #iconNav{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 0px 17px;
+        font-size: 24px;
+    }
+    nav #contentSections{
+        position: fixed;
+        right: -100%;
+        background-color: black;
+        margin: 0px;
+        top: 0px;
+        height: 120%;
+        width: 260px;
+    }
+    nav figure i{
+        font-size: 35px;
+    }
+    nav #contentSections #btnNav{
+        height: 80px;    
+    }
+    nav #contentSections #btnNav button{
+        border: none;
+        cursor: pointer;
+        float: right;
+        margin: 24px 10%;
+        font-size: 30px;
+        color: white;
+        background-color: black;
+    }
+
+    nav #contentSections #sections{
+        display: flex;
+        flex-direction: column;
+    }
+    nav #contentSections #sections li{
+        margin: 12px 0px 12px 0px;
+        padding: 10px 0px;
+        list-style: none;
+        width: 90%; 
+        overflow: hidden;
+    }   
+    
+}
+
+@media ( min-width: 320px) and ( max-width: 599px){
+    header{
+        height: 80px;
+    }
+    header #content-logo{
+        flex-direction: row;
+        width: 300px;
+        min-width: 300px;
+        margin-left: 10px;
+        min-width: 200px;
+    }
+    header #content-logo #logo{
+        width: 60px;
+        height: 60px;
+        min-height: 60px;
+        min-width: 60px;
+        margin-top: 3px;
+    }
+    header #content-logo div{
+        width: 190px;
+        min-width: 190px;
+    }
+    header #content-logo div h1{
+        font-size: 20px;
+        margin: 20px 5px 5px 5px;
+    }
+    header #content-logo div h6{
+        margin: 10px 5px 5px 5px;
+    }
+    nav #iconNav{
+        display: block;
+        margin: 0px 20px 0px 0px;
+        font-size: 25px;
+    }
+    nav #contentSections{
+        position: fixed;
+        right: -100%;
+        background-color: black;
+        margin: 0px;
+        top: 0px;
+        height: 120%;
+        width: 260px;
+    }
+    nav #contentSections #btnNav{
+        height: 80px;    
+    }
+    nav #contentSections #btnNav button{
+        border: none;
+        cursor: pointer;
+        float: right;
+        margin: 24px 10%;
+        font-size: 30px;
+        color: white;
+        background-color: black;
+    }
+
+    nav #contentSections #sections{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    nav #contentSections #sections li{
+        margin: 12px 0px 12px 0px;
+        padding: 10px 0px;
+        list-style: none;
+        width: 95%; 
+        overflow: hidden;
+    }   
+
+}
+
+@media ( min-width: 600px) and ( max-width: 997px){
+    header #content-logo{
+        width: 320px;
+        min-width: 320px;
+    }
+    header #content-logo div h1{
+        margin: 20px 5px 5px 5px;
+    }
+    header #content-logo div h6{
+        margin: 10px 5px 5px 5px;
+    }
+    /*css para el nav */
+    nav #iconNav{
+        display: block;
+        margin: 0px 45px 0px 0px;
+        font-size: 33px;
+    }
+    nav #contentSections{
+        background-color: black;
+        position: fixed;
+        height: 120%;
+        width: 260px;
+        margin: 0px;
+        top: 0px;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    nav figure i{
+        font-size: 35px;
+    }
+    nav #contentSections #btnNav{
+        height: 80px;    
+    }
+    nav #contentSections #btnNav button{
+        border: none;
+        cursor: pointer;
+        float: right;
+        margin: 24px 10%;
+        font-size: 30px;
+        color: white;
+        background-color: black;
+    }
+    nav #contentSections #sections{
+        display: flex;
+        flex-direction: column;
+    }
+    nav #contentSections #sections li{
+        margin: 12px 0px 12px 0px;
+        padding: 10px 0px;
+        list-style: none;
+        width: 90%; 
+        overflow: hidden;
+    }   
+    nav #contentSections #sections li .link{
+        padding: 10px 100% 10px 0px;
+    }
+    nav #contentSections #sections li:nth-child(2) *{
+        padding: 10px 20% 10px 0px;;
+    }
+
+}
+
+
+
+@media ( min-width: 767px) and ( max-width: 997px){
+
+    header nav #content seccion
+    /* css para el Nav */
+    nav #iconNav{
+        display: block;
+        margin: 0px 45px 0px 0px;
+    }
+    nav #iconNav i{
+        font-size: 33px;
+        margin: 0px;
+    }
+    nav #contentSections{
+        position: fixed;
+        right: -100%;
+        background-color: black;
+        margin: 0px;
+        top: 0px;
+        height: 120%;
+        width: 260px;
+    }
+    nav #contentSections #btnNav{
+        height: 80px;    
+    }
+    nav #contentSections #btnNav button{
+        border: none;
+        cursor: pointer;
+        float: right;
+        margin: 24px 10%;
+        font-size: 30px;
+        color: white;
+        background-color: black;
+    }
+    nav #contentSections #sections{
+        display: flex;
+        flex-direction: column;
+    }
+    nav #contentSections #sections li{
+        margin: 12px 0px 12px 0px;
+        padding: 10px 0px;
+        list-style: none;
+        width: 90%; 
+        overflow: hidden;
+    }   
+
+}
+
+
+
+@media ( min-width: 998px){
+    header #content-logo{
+        width: 320px;
+        min-width: 320px;
+    }
+    header nav #contentSections #sections{
+        width: 590px;
+        margin-left: 0px;
+    }
+    header #content-logo div h1{
+        margin: 20px 5px 5px 5px;
+    }
+    header #content-logo div h6{
+        margin: 10px 5px 5px 5px;
+    }
+    #iconNav{
+        display: none;
+    }
+    nav #contentSections{
+        display: block;
+        position: static;
+        left: 0;
+        min-width: 600px;
+        margin-right: 30px;
+    }
+    nav #contentSections #btnNav{
+        display: none;
+    }
+    nav #contentSections #sections{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    #contentSections #sections li{
+        list-style: none;
+        margin: 0px;
+    }
+}
